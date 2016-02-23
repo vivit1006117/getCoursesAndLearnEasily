@@ -1,3 +1,12 @@
 module.exports = function(grunt) {
-  // Do grunt-related things in here
+require('load-grunt-tasks')(grunt);
+	grunt.initConfig({
+    shell: {
+        start: {
+            command: "open index.html" 
+        }
+    }
+});
+
+grunt.registerTask('default', ['shell']);
 };
