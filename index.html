@@ -4,21 +4,25 @@
 </title>
 <head>
 	<link rel="stylesheet" type="text/css" href="myStyle.css">
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="indexController.js"></script>
 </head>
 <body>
-	<div class="login">
+	<div class="login" ng-app="myApp" ng-controller="GreetingController"> 
+
 		<div class="loginId">
-			<span>Login Id : </span>
-			<input type="textBox">
+			<span>Login Id : <input type="textBox" ng-model="loginName" placeholder="Enter Login Id"> </span>
+		
 		</div>
 		<div class="password">
-			<span>Password : </span>
-			<input type="password">
+			<span>Password : <input type="textBox" ng-model="password" placeholder="Enter Password"> </span>
 		</div>
 		<div>
-			<input type="submit" value="Submit">
-			<input type="submit" value="Help">
+			<input type="submit" value="Submit" ng-click='submit()'>
+			<input type="submit" value="Help" ng-click='help()'>
 		</div>
+		<div>
+	</div>
 	</div>
 </body>
 </html>
