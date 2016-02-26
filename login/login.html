@@ -1,29 +1,29 @@
-<html>
+<html lang="en" ng-app="myApp">
 <title>
 	Learn easy and Fast
 </title>
 <head>
 	<link rel="stylesheet" type="text/css" href="../myStyle.css">
-	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/angular/angular.js"></script>
 	<script src="loginController.js"></script>
 </head>
 <body ng-init>
-<div class="login" ng-controller="GreetingController"> 
+    <div class="login" ng-controller="GreetingController"> 
 
-    <form>
-		<div class="loginId">
-			<span>Login Id : <input class="loginIdText" type="textBox" ng-model="loginName" placeholder="Enter Login Id"/> </span>
-		
-		</div>
-		<div class="password">
-			<span>Password : <input class="passwordText" type="textBox" ng-model="login.password" placeholder="Enter Password"/> </span>
-		</div>
-		<div>
-            <input class="submit" type="submit" value="Submit" ng-click='GreetingController.submit()'>
-		</div>
-    </form>
+        <form>
+            <div class="loginId">
+                <span>Login Id : <input class="loginIdText" type="textBox" ng-model="loginId" placeholder="Enter Login Id"/> </span>
+            </div>
+            <div class="password">
+                <span>Password : <input class="passwordText" type="textBox" ng-model="password" placeholder="Enter Password"/> </span>
+            </div>
+            <div>
+                <input class="submit" type="submit" value="Submit" ng-click='submit()'>
+            </div>
+        </form>
         <span><input class="help" type="reset" value="Help" ng-click='help()'></span>
         <span><input class="register" type="reset" value="Register" ng-click='register()'></span>
-</div>
+        <span ng-show="helpEnabled">{{brief}}</span>
+    </div>
 </body>
 </html>
