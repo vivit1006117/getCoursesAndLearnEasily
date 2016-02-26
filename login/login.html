@@ -1,26 +1,29 @@
-<html lang="en" ng-app>
+<html>
 <title>
-	Dust Bin Finder
+	Learn easy and Fast
 </title>
 <head>
-	<link rel="stylesheet" type="text/css" href="myStyle.css">
-	<script src="bower_components/angular/angular.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="../myStyle.css">
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="loginController.js"></script>
 </head>
 <body ng-init>
-	<div class="login">
+<div class="login" ng-controller="GreetingController"> 
+
+    <form>
 		<div class="loginId">
-			<span>Login Id : </span>
-			<input type="textBox" ng-model="value">
+			<span>Login Id : <input class="loginIdText" type="textBox" ng-model="loginName" placeholder="Enter Login Id"/> </span>
+		
 		</div>
 		<div class="password">
-			<span>Password : </span>
-			<input type="password" ng-readonly=true></input>
+			<span>Password : <input class="passwordText" type="textBox" ng-model="login.password" placeholder="Enter Password"/> </span>
 		</div>
 		<div>
-			<input type="submit" value="Submit">
-			<input type="submit" value="Help">
+            <input class="submit" type="submit" value="Submit" ng-click='GreetingController.submit()'>
 		</div>
-	</div>
+    </form>
+        <span><input class="help" type="reset" value="Help" ng-click='help()'></span>
+        <span><input class="register" type="reset" value="Register" ng-click='register()'></span>
+</div>
 </body>
 </html>

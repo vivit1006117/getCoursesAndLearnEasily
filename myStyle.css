@@ -1,12 +1,35 @@
-submit{
-	width: 50%;
+.submit{
+	width: 308px;
+    margin-top: 7px;
+}
+.help{
+    width: 150px;
+}
+.register{
+    width: 150px;
+    height: 50px;
+    margin-left: 3px;
 }
 .login{
+    background-color: chocolate;
+    width: 326px;
 	padding: 20 20 20 20;
+    margin-top: 250px;
+    margin-left: 300px;
 }
 .loginId{
-	padding: 20 20 20 20;
+	padding: 10 10 10 10;
 }
 .password{
-	padding: 20 20 20 20;
+	padding: 10 10 10 10;
+}
+.loginIdText{
+    height: 26px;
+    margin-left: 70px;
+    width: 161px;
+}
+.passwordText{
+    height: 26px;
+    margin-left: 63px;
+    width: 161px;
 }

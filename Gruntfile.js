@@ -3,7 +3,7 @@ require('load-grunt-tasks')(grunt);
 	grunt.initConfig({
     shell: {
         start: {
-            command: "open userDetail/user_details_form.html" 
+            command: "open login/login.html" 
         }
     }
 });
