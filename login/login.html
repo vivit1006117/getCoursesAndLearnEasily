@@ -18,12 +18,13 @@
                 <span>Password : <input class="passwordText" type="textBox" ng-model="password" placeholder="Enter Password"/> </span>
             </div>
             <div>
-                <input class="submit" type="submit" value="Submit" ng-click='submit()'>
+                <button class="submit" type="submit" value="Submit" ng-click='submit()'>Submit</button>
             </div>
         </form>
-        <span><input class="help" type="reset" value="Help" ng-click='help()'></span>
-        <span><input class="register" type="reset" value="Register" ng-click='register()'></span>
+        <span><button class="help" type="reset" value="Help" ng-click='help()'>Help</button></span>
+        <span><button class="register" type="reset" value="Register" ng-click='register()'>Register</button></span>
         <span ng-show="helpEnabled">{{brief}}</span>
+        <span ng-show="resiter">{{hasToGoto}}</span>
     </div>
 </body>
 </html>

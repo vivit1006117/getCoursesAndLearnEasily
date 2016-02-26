@@ -1,8 +1,8 @@
 define(, function(){
     
     login function(loginId, password) = {
-    console.log($scope.password);
-    console.log($scope.loginId);
+    console.log(loginId);
+    console.log(password);
 }
     return {
         login: login

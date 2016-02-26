@@ -1,13 +1,15 @@
 .submit{
 	width: 308px;
+    height: 40px;
     margin-top: 7px;
 }
 .help{
     width: 150px;
+    height: 40px;
 }
 .register{
     width: 150px;
-    height: 50px;
+    height: 40px;
     margin-left: 3px;
 }
 .login{
