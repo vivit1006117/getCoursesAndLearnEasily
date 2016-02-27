@@ -1,16 +1,36 @@
+
+body{
+    background-color: burlywood;
+}
 .submit{
+    background-color: darkgrey;
 	width: 308px;
     height: 40px;
     margin-top: 7px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
 }
 .help{
     width: 150px;
     height: 40px;
+    margin-bottom: 15px;
+    background-color: cornflowerblue;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
 }
 .register{
     width: 150px;
     height: 40px;
-    margin-left: 3px;
+    margin-left: 4px;
+    background-color: cornsilk;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
 }
 .login{
     background-color: chocolate;
