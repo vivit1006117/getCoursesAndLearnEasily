@@ -6,23 +6,50 @@
 	<link rel="stylesheet" type="text/css" href="../myStyle.css">
 </head>
 <body>
-	<div class="login">
+	<div class="details">
 		<form>
-			<table >
-				<tr><td><span>User Name : </span></td><td><input type="textBox"></td></tr>
-				<tr><td><span>Phone No. : </span></td><td><input type="textBox"></td></tr>
-				<tr><td><span>Date Of Birth : </span></td><td><input type="textBox"></td></tr>
-				<tr><td><span>Locality : </span></td><td><input type="textBox"></td></tr>
-				<tr><td><span>Login Id : </span></td><td><input type="textBox"></td></tr>
-				<tr><td><span>Password : </span></td><td><input type="password"></td></tr>
-				<tr><td><span>Confirm Password : </span></td><td><input type="password"></td></tr>
+			<table class="details__table">
+				<tr>
+                    <td><span>User Name : </span></td>
+                    <td><input class="details__text" type="textBox" placeholder="Enter User Name"></td>
+                </tr>
+				<tr>
+                    <td><span>Phone No. : </span></td>
+                    <td><input class="details__text" type="textBox" placeholder="Enter Phone No."></td>
+                </tr>
+				<tr>
+                    <td><span>Date Of Birth : </span></td>
+                    <td><input class="details__text" type="textBox" placeholder="Enter Date Of Birth"></td>
+                </tr>
+				<tr>
+                    <td><span>Locality : </span></td>
+                    <td><input class="details__text" type="textBox" placeholder="Enter Locality"></td>
+                </tr>
+				<tr>
+                    <td><span>E-mail : </span></td>
+                    <td><input class="details__text" type="textBox" placeholder="Enter E-mail"></td>
+                </tr>
+				<tr>
+                    <td><span>Login Id : </span>
+                    </td><td><input class="details__text" type="textBox" placeholder="Enter Login Id"></td>
+                </tr>
+				<tr>
+                    <td><span>Password : </span></td>
+                    <td><input class="details__text" type="password" placeholder="Enter Password"></td>
+                </tr>
+				<tr>
+                    <td><span>Confirm Password : </span></td>
+                    <td><input class="details__text" type="password" placeholder="Enter Confirm Password"></td>
+                </tr>
 				<tr>
 					<td><input type="checkbox">
-					<span>Except <a href="#">Teams and condition</a></span></td>
+					<span>Except <a href="terms_and_condition.html">Terms and condition</a></span></td>
 				</tr>
 				<tr>
-					<td><a href="../index.html">Go To Login</a></td>
-					<td><input type="reset" value="reset"></td>
+                    <td colspan="2"><button class="details__reset">Reset</button></td>
+				</tr>
+                <tr>
+					<td colspan="2"><button class="details__submit">Submit</button></td>
 				</tr>
 		</table>
 		</form>

@@ -12,6 +12,26 @@ body{
     border-bottom-width: 0px;
     border-right-width: 0px;
 }
+.details__submit{
+    background-color: #948F8F;
+	width: 440px;
+    height: 40px;
+    margin-top: 7px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+}
+.details__reset{
+    background-color: #948F8F;
+	width: 440px;
+    height: 40px;
+    margin-top: 7px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+}
 .help{
     width: 150px;
     height: 40px;
@@ -39,6 +59,17 @@ body{
     margin-top: 250px;
     margin-left: 300px;
 }
+.details{
+    background-color: white;
+    width: 450px;
+    height: 500px;
+	padding: 20 20 20 20;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+.details__table{
+    height: 500px;
+}
 .loginId{
 	padding: 10 10 10 10;
 }
@@ -50,8 +81,37 @@ body{
     margin-left: 70px;
     width: 161px;
 }
+.details__text{
+    height: 28px;
+    margin-left: 70px;
+    width: 161px;
+}
 .passwordText{
     height: 26px;
     margin-left: 63px;
     width: 161px;
+}
+.termsAndCondition{
+    background-color: white;
+        margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 90px;
+}
+.termsAndCondition__goBack{
+    background-color: #948F8F;
+	width: 700px;
+    height: 40px;
+    margin-top: 7px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    margin-top: 590px;
+}
+.termsAndCondition__panal{
+    text-align: center;
+    margin-top: 40px;
+    width: 764;
+    height: 698;
+    background: aliceblue;
 }
