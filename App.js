@@ -11,10 +11,10 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
         })
         .state("page2", {
             url:"/page2",
-            templateUrl: "World"
+            template: "World"
         })
         .state("page3", {
             url:"/page3",
-            templateUrl: "There"
+            template: "There"
         });
 });
