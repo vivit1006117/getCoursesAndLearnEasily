@@ -4,10 +4,11 @@
 </title>
 <head>
 	<link rel="stylesheet" type="text/css" href="myStyle.css">
-	<script src="bower_components/angular/angular.js"></script>
-	<script src="indexController.js"></script>
+	
 </head>
 <body>
+
+	<div data-ui-view=""></div>
 	<div class="login" ng-app="myApp" ng-controller="GreetingController"> 
 
 		<div class="loginId">
@@ -25,4 +26,8 @@
 	</div>
 	</div>
 </body>
+<script src="bower_components/angular/angular.js"></script>
+	<script src="indexController.js"></script>
+	<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="App.js"></script>
 </html>
