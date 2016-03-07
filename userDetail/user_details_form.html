@@ -1,11 +1,13 @@
-<html>
+<html ng-app="myApp">
 <title>
-	Dust Bin Finder
+	User Details Form
 </title>
 <head>
 	<link rel="stylesheet" type="text/css" href="../myStyle.css">
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="userDetailsController.js"></script>
 </head>
-<body>
+<body ng-init>
 	<div class="details">
 		<form>
 			<table class="details__table">
@@ -49,10 +51,11 @@
                     <td colspan="2"><button class="details__reset">Reset</button></td>
 				</tr>
                 <tr>
-					<td colspan="2"><button class="details__submit">Submit</button></td>
+					<td colspan="2"><button class="details__submit" ng-click="submit()">Submit</button></td>
 				</tr>
 		</table>
 		</form>
 	</div>
+</body>
 </body>
 </html>

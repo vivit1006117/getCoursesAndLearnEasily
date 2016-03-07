@@ -9,6 +9,7 @@
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-shell": "^1.1.2",
+    "jasmine": "^2.4.1",
     "load-grunt-tasks": "^3.4.0"
   },
   "scripts": {

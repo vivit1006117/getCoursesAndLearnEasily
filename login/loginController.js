@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', []);
 
-myApp.controller('GreetingController', ['$scope', '$http', '$q', function ($scope, $http, $q) {
+myApp.controller('GreetingController', ['$scope', '$http', '$q', "$state", function ($scope, $http, $q, $state) {
     "use strict";
     var controller = this;
 
@@ -24,6 +24,7 @@ myApp.controller('GreetingController', ['$scope', '$http', '$q', function ($scop
                 if (controller.credentials.loginPassword[0].loginId === controller.loginId && controller.credentials.loginPassword[0].password === controller.password) {
                     $scope.isSucess = true;
                     $scope.sucess = "you are sucessfully loged in";
+                    $state.go("page2");
                 } else {
                     $scope.isSucess = true;
                     $scope.sucess = "your login has failed";
