@@ -1,36 +1,38 @@
 <html lang="en" ng-app="myApp">
 <title>
-	Learn easy and Fast
+    Learn easy and Fast
 </title>
 <head>
-	<link rel="stylesheet" type="text/css" href="../myStyle.css">
-	<script src="../bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-	<script src="loginController.js"></script>
+    <link rel="stylesheet" type="text/css" href="../myStyle.css">
+    <script src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript"
+            src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="loginController.js"></script>
     <script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="../App.js"></script>
 </head>
-    <div data-ui-view=""></div>
+<div data-ui-view=""></div>
 
 <body ng-init>
-    <div class="login" ng-controller="GreetingController"> 
+<div class="login" ng-controller="GreetingController">
 
-        <form>
-            <div class="loginId">
-                <span>Login Id : <input class="loginIdText" type="textBox" ng-model="loginId" placeholder="Enter Login Id"/> </span>
-            </div>
-            <div class="password">
-                <span>Password : <input class="passwordText" type="textBox" ng-model="password" placeholder="Enter Password"/> </span>
-            </div>
-            <div>
-                <button class="submit" type="submit" value="Submit" ng-click='submit()'>Submit</button>
-            </div>
-        </form>
-        <span><button class="help" type="reset" value="Help" ng-click='help()'>Help</button></span>
-        <span><button class="register" type="reset" value="Register" ng-click='register()'>Register</button></span>
-        <span ng-show="helpEnabled">{{brief}}</span>
-        <span ng-show="resiter">{{hasToGoto}}</span>
-        <span ng-show="isSucess">{{sucess}}</span>
-    </div>
+    <form>
+        <div class="loginId">
+            <span>Login Id : <input class="loginIdText" type="textBox" ng-model="loginId" placeholder="Enter Login Id"/> </span>
+        </div>
+        <div class="password">
+            <span>Password : <input class="passwordText" type="textBox" ng-model="password"
+                                    placeholder="Enter Password"/> </span>
+        </div>
+        <div>
+            <button class="submit" type="submit" value="Submit" ng-click='submit()'>Submit</button>
+        </div>
+    </form>
+    <span><button class="help" type="reset" value="Help" ng-click='help()'>Help</button></span>
+    <span><button class="register" type="reset" value="Register" ng-click='register()'>Register</button></span>
+    <span ng-show="helpEnabled">{{brief}}</span>
+    <span ng-show="resiter">{{hasToGoto}}</span>
+    <span ng-show="isSucess">{{sucess}}</span>
+</div>
 </body>
 </html>
